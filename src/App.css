@@ -1,0 +1,25 @@
+.calculator {
+	height: 500px;
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	/* justify-content: center; */
+	align-items: center;
+}
+.pad-grid {
+	display: grid;
+	/* grid-template-rows: repeat(4, 100px); */
+	grid-template-columns: repeat(4, auto);
+	gap: 10px;
+}
+
+button {
+	border: none;
+	background-color: rgba(128, 128, 128, 0.128);
+	height: 70px;
+	width: 70px;
+	border: 2px solid black;
+	border-radius: 10px;
+	cursor: pointer;
+}
