@@ -5,7 +5,9 @@
  *@returns {{success:boolean, result:string, message:string}}
  */
 export function calculate(expression, operators) {
-	console.log("calculate called: ");
+	if (!expression) {
+		return { success: false, message: "Error" };
+	}
 	// step: 1 -> create tokens from the expression
 	// create array from the string:
 	// const expressionArr = Array.from(expression);
